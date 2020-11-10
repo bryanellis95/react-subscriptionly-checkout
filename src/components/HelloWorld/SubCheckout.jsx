@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card } from 'antd';
+import { Card, Input, Button } from 'antd';
 import styles from './SubCheckout.module.css';
+
 import 'antd/es/button/style/css';
 
 
@@ -11,10 +12,13 @@ import 'antd/es/button/style/css';
  */
 const SubCheckout = ({ price }) => (
   <>
-     <Card title={"Total: $"+ price} extra={<a href="#">More</a>} style={{ width: 300 }}>
-      <p>Card content</p>
-      <p>Card content</p>
-      <p>Card content</p>
+     <Card title={"Total: $"+ price} style={{ width: 300 }}>
+     <Input placeholder="First Name"  />
+     <Input placeholder="Last Name" style={{marginTop: '15px'}}/>
+     <Input placeholder="CC number" style={{marginTop: '15px'}}/>
+     <Input placeholder="Expiration" style={{marginTop: '15px'}}/>
+     <Input placeholder="Security Code" style={{marginTop: '15px'}}/>
+      <Button style={{marginTop: '15px'}} type="primary">Checkout for ${price}</Button>
     </Card>
   </>
 );

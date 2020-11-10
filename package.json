@@ -1,13 +1,14 @@
 {
   "name": "react-subscriptionly-checkout",
-  "version": "0.0.9",
-  "description": "Otorio react components library boilerplate",
+  "version": "1.0.0",
+  "description": "React component that allows for a smoother stripe checkout! more to come!",
   "keywords": [
     "react",
     "antd",
     "webpack",
     "styleguidist",
-    "otorio"
+    "otorio",
+     "stripe"
   ],
   "main": "dist/main.js",
   "scripts": {
@@ -19,9 +20,9 @@
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "prepublishOnly": "npm run build"
   },
-  "author": "noammanyfler@gmail.com",
+  "author": "info@subscriptionly.io",
   "license": "GPL-3.0-or-later",
-  "repository": "github:noammanyfler/otorio-components",
+  "repository": "github:bryanellis95/react-subscriptionly-checkout",
   "peerDependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
